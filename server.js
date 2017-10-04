@@ -8,19 +8,36 @@ const server = http.createServer((req, res) => {
    res.end('test');
 });
 
+const options = {
+    host : '10.2.8.18',
+    port : 3400,
+    path : '/robberies',
+    method : 'GET'
+};
+
 const io = require('socket.io').listen(server);
 
 io.sockets.on('connection', (socket) => {
     socket.on('subscribeToTimer', (interval) => {
-       console.log('Client subscribing with a ', interval, 'interval');
-       setInterval(() => {
-           socket.emit('timer', new Date());
-       }, interval);
+        setInterval(() =>{
+            socket.emit('timer', new Date());
+        }, interval);
     });
-    socket.on('message', (message) => {
-        console.log(message);
+    socket.on('subscribeToRobberies', (interval) => {
+        setInterval(() => {
+            console.log("getting robberies");
+            let body = '';
+            const req = http.request(options, (res) => {
+                res.on('data', (d) => { body += d});
+                res.on('end', () => {
+                    socket.emit('robberies', JSON.parse(body));
+                });
+            });
+            req.end();
+        }, interval);
     });
 });
+
 
 server.listen(port, () => {
     console.log("Server listening on", port);
