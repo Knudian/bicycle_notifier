@@ -1,0 +1,19 @@
+{
+  "name": "bicycle_notifier",
+  "version": "0.0.1",
+  "description": "bicycle projet notification service",
+  "dependencies": {
+    "express": "^4.16.1",
+    "socket.io": "^2.0.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knudian/bicycle.git"
+  },
+  "author": "Knudian, Fubuke, Aaol",
+  "license": "ISC"
+}
