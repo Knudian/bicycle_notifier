@@ -23,23 +23,17 @@ The project is part of [Bicycle](https://github.com/Knudian/bicycle/).
 
 ```shell
 npm install
+npm start
 ```
 
 It runs in your port 8000. Protect yourself !
-
-## Versioning
-
-We use [GitHub](http://github.com/) for versioning. 
-For the versions available, see the [tags on this repository](https://github.com/bicycle/tags). 
 
 ## Authors
 
 * **Mr J.** - [Fubuke](https://github.com/Fubuke)   - *Side Developer, CSS* 
 * **Mr K.** - [Knudian](https://github.com/Knudian) - *Main Development*
 * **Mr R.** - [Aaol](https://github.com/Aaol)       - *Side Development, Mail*
-* **Miss ♥** - [BigBoobies](https://thatsnotanadress.com) - *Moral Support*
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Miss ♥** - [BigBoobies](https://www.meetic.fr)  - *Moral Support*
 
 ## License
 
@@ -49,3 +43,4 @@ This project is not licensed.
 
 * Thanks to [Loic Guillois](http://fitlab.fr) for the architecture lecture.
 * Thanks to [Mr J's mum](http://orteil.dashnet.org/cookieclicker/) for her cookies.
+* Thanks to [Gojira](http://www.gojira-music.com/), [LOL](https://go.twitch.tv/ogaminglol), and [9GAG](http://9gag.com) for their active support during the development.
